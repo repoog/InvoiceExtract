@@ -1,2 +1,21 @@
-# InvoiceExtract
-a Python script extract invoice files from specific path and output key data to excel file.
+# 发票数据提取
+
+该脚本是为了提取PDF格式的电子发票中的以下信息，并将其导出到Excel表格中：
+* 开票日期
+* 发票代码
+* 发票号码
+* 开票方
+* 票面金额
+
+
+## 使用方法
+
+1. 按Win+R，打开左下角“运行”窗口，输入“cmd”，点击确定或回车；
+2. 使用“cd [程序所在目录]”进入到程序所在的路径，如：cd C:\Users\repoog\Desktop
+3. 执行“.\InvoiceExtract.exe 发票文件目录 导出文件路径”，如：.\InvoiceExtract.exe 发票文件 发票.xlsx
+4. 对于无法正确读取数据的电子发票，程序会输出错误文件名称；
+
+## 注意事项
+
+电子发票的格式会因省份不同而略有不同，如中英文标点或空格等，可能会影响部分发票文件的数据读取。
+
